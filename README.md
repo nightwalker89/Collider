@@ -24,16 +24,19 @@ Current state is always saved to file currentwork.txt <br />
 If app crash or you stop app, you can start working from the last saved state. Provided the launch configuration has not been changed. <br />
 Note! set minimal -htsz value depending on -w <br />
 
--w 30  -htsz 28 need around 32GB of RAM to generate all arrays <br />
--w 29  -htsz 28 <br />
--w 28  -htsz 27 <br />
--w 27  -htsz 25 <br />
-if you set low -htsz value then you can get error during sorting HT, increase -htsz to solve issue.<br />
+|  value     |  GPU Memory |
+| ---------- | ----------- |
+|   -w 30    |  11.03 GB   |
+|   -w 29    |   8.01 GB   |
+|   -w 28    |   7.07 GB   |
+|   -w 27    |   6.02 GB   |
 
--w 30 good for GPU with memory 11Gb <br />
--w 29 good for GPU with memory 8Gb <br />
--w 28 good for GPU with memory 7Gb <br />
--w 27 good for GPU with memory 6Gb <br />
+|   value    |     RAM     |
+| ---------- | ----------- |
+|   -w 30    |   -htsz 28  32GB|
+|   -w 29    |   -htsz 28  |
+|   -w 28    |   -htsz 27  |
+|   -w 27    |   -htsz 25  |
 
 All arrays(Baby, Giant) and hashtable saved to the disk for fast spinup solver next time (if parameters will not changed). <br />
 After you have the arrays saved, you will need less RAM to launch. <br />
