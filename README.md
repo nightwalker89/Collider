@@ -1,8 +1,8 @@
 # GPU BSGS Collider
 #### Cuda (Nvidia card only) and Windows x64
 ![alt text](x64/large-bitcoin-collider.png "Collider")<br />
-Forked from [Etayson/BSGS-cuda](https://github.com/Etayson/BSGS-cuda)<br /><br />
-Help page: ```Collider.exe -h``` 
+Forked from [Etayson/BSGS-cuda](https://github.com/Etayson/BSGS-cuda)<br />
+### Help page: Collider.exe -h
 ```
 C:\Users\User>Collider.exe -h
 
@@ -19,7 +19,12 @@ C:\Users\User>Collider.exe -h
 -wl      Set recovery file from which the state will be loaded
 -wt      Set timer for autosaving current state, default every 180seconds
 ```
-## Use:
+### Collider speed (32GB RAM): 
+- RTX 3090 (24GB) = ~62bit/s or ~2^62.15/s
+- RTX 2070 (8 GB) = ~60bit/s or ~1,1Ekeys/s 
+(1,152,921,504,606,846,975 private keys/s)
+
+### Use:
 Current state is always saved to file currentwork.txt <br />
 If app crash or you stop app, you can start working from the last saved state. Provided the launch configuration has not been changed. <br />
 Note! set minimal -htsz value depending on -w <br />
@@ -41,12 +46,11 @@ Note! set minimal -htsz value depending on -w <br />
 All arrays(Baby, Giant) and hashtable saved to the disk for fast spinup solver next time (if parameters will not changed). <br />
 After you have the arrays saved, you will need less RAM to launch. <br />
 
-Example range 64 bit:
-in 1.txt Publik key (03c5bcdd76b64cbbd8212080fe5efa9bf577cdcaac9f5853b216e71723ec3aca19) 
-
+Example range 64 bit:<br />
+In 1.txt Publik key: 03c5bcdd76b64cbbd8212080fe5efa9bf577cdcaac9f5853b216e71723ec3aca19<br /><br />
 Run test: ```Collider.exe -t 512 -b 72 -p 306 -pk 49dccfd96dc5df56487436f5a1b18c4f5d34f65ddb48cb5e0000000000000000 -pke 49dccfd96dc5df56487436f5a1b18c4f5d34f65ddb48cb5effffffffffffffff -w 30 -htsz 28 -infile 1.txt```<br />
 
-## Example work:
+### Example work:
 ```
 C:\Users\User>Collider.exe -t 512 -b 72 -p 306 -pk 49dccfd96dc5df56487436f5a1b18c4f5d34f65ddb48cb5e0000000000000000 -pke 49dccfd96dc5df56487436f5a1b18c4f5d34f65ddb48cb5effffffffffffffff -w 30 -htsz 28 -infile 1.txt
 Number of GPU threads set to #512
@@ -119,7 +123,7 @@ GPU#0 job finished
 GPU#0 thread finished
 cuda finished ok
 ```
-- **Solved pubkeys will be saved to the win.txt file!**
+Solved pubkeys will be saved to the **win.txt** file!
 
 ## Compilation
 - To compile the Cpllider you need [**Purebasic v5.31**](https://www.purebasic.com)
