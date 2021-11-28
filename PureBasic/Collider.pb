@@ -6864,6 +6864,7 @@ EndDataSection
 ; Folding = TXAg2HB1+---e-
 ; EnableThread
 ; EnableXP
-; Executable = bsgscudaHT_1_7_3.exe
+; Executable = Collider.exe
+; Site https://github.com/phrutis/Collider
 ; DisableDebugger
 ; CompileSourceDirectory
