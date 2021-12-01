@@ -20,9 +20,13 @@ C:\Users\User>Collider.exe -h
 -wt      Set timer for autosaving current state, Default every 180 seconds
 ```
 ### Collider Speed: 
-- (5) RTX 3080 (10GB) = ~10 Ekeys/s
-- RTX 3090 (24GB)     = ~62bit/s
-- RTX 2070 (8 GB)     = ~1,6 Ekeys/s (1,652,921,504,606,846,975 private keys/s)
+- RTX 3090 (24GB) = 4.7 Ekeys/s
+- RTX 3080 (10GB) = 2.7 Ekeys/s
+- RTX 2070 ( 8GB) = 1,7 Ekeys/s
+- 1 Ekeys = 1,000,000,000,000,000,000
+
+When using 5 or more GPUs, there is a decrease in the overall speed by -30%<br />
+In order not to lose speed, it is better to run window copies for each GPU with the -d 0 or -d 1 parameter ...
 
 ### Search [Puzzles 120-160](https://privatekeys.pw/puzzles/bitcoin-puzzle-tx)<br />
 #120 17s2b9ksz5y7abUm92cHwG8jEPCzK3dLnT<br />
