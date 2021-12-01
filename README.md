@@ -20,9 +20,9 @@ C:\Users\User>Collider.exe -h
 -wt      Set timer for autosaving current state, Default every 180 seconds
 ```
 ### Collider Speed: 
-- RTX 3090 (24GB) = 4.7 Ekeys/s
-- RTX 3080 (10GB) = 2.7 Ekeys/s
-- RTX 2070 ( 8GB) = 1,7 Ekeys/s
+- RTX 3090 (24 GB) = 4.7 Ekeys/s
+- RTX 3080 (10 GB) = 2.7 Ekeys/s
+- RTX 2070 ( 8 GB) = 1,7 Ekeys/s
 - 1 Ekeys = 1,000,000,000,000,000,000
 
 When using 5 or more GPUs, there is a decrease in the overall speed by -30%<br />
